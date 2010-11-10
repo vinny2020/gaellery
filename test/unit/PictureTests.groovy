@@ -14,7 +14,7 @@ class PictureTests extends GrailsUnitTestCase {
     void testGetSizes() {
     def pid = "3520616727"
     println "The Photo ID is " + pid
-    String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photos.getsizes&photo_id=${pid}"
+    String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photos.getsizes&photo_id=${pid}"
     String xml = new URL(url).text
     def sizes = new XmlSlurper().parseText(xml).sizes
 
@@ -30,7 +30,7 @@ class PictureTests extends GrailsUnitTestCase {
        //http://farm4.static.flickr.com/3341/3520616727_574944d71d_b.jpg
        List ids  = new ArrayList()
        def photoset_id = "72157614529783914"
-       String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
+       String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
        //println "the link is " + url
        String xml = new URL(url).text
        println xml
@@ -48,7 +48,7 @@ class PictureTests extends GrailsUnitTestCase {
   void testRandomLink() {
                 List ids  = new ArrayList()
        def photoset_id = "72157614529783914"
-       String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
+       String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
        //println "the link is " + url
        String xml = new URL(url).text
        println xml

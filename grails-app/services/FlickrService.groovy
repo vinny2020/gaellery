@@ -40,7 +40,7 @@ class FlickrService {
 
 
     //println "The Photo ID is " + pid
-    String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photos.getsizes&photo_id=${pid}"
+    String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photos.getsizes&photo_id=${pid}"
     String xml = new URL(url).text
     def sizes = new XmlSlurper().parseText(xml).sizes
     //println "the best size is " + sizes.size[4].@source
@@ -59,7 +59,7 @@ class FlickrService {
        def photoset_id = "72157614529783914"
        def dragonset_id = "72157622163739281"
 
-       String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
+       String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photosets.getPhotos&per_page=20&extras=url_s,&photoset_id=${photoset_id}"
        //println "the link is " + url
        String xml = new URL(url).text
        //println "xml is "  + xml
@@ -93,7 +93,7 @@ class FlickrService {
         Map info  = new HashMap()
        def photoset_id = "72157614529783914"
       // def dragonset_id = "72157622163739281"
-       String url = "http://api.flickr.com/services/rest/?api_key=561b95e0a56e34b48208bfc4f541a65e&method=flickr.photosets.getPhotos&per_page=20&extras=tags,title,url_m,&photoset_id=${photoset_id}"
+       String url = "http://api.flickr.com/services/rest/?api_key=${fid}&method=flickr.photosets.getPhotos&per_page=20&extras=tags,title,url_m,&photoset_id=${photoset_id}"
        //println "the link is " + url
        String xml = new URL(url).text
       //debug
