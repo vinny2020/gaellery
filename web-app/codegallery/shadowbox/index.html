@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>ShadowBox Example</title>
+
+<style>
+a{color: wheat; font-size: 15px}
+a:visited{color: wheat; font-size: 10px;}
+</style>
+
+<script type="text/javascript" src="adapter/shadowbox-base.js"></script>
+<script type="text/javascript" src="shadowbox.js"></script>
+
+<script type="text/javascript">
+Shadowbox.loadSkin('classic', 'skin'); // use the "classic" skin
+Shadowbox.loadLanguage('en', 'lang'); // use the English language
+Shadowbox.loadPlayer(['img', 'qt'], 'player'); // use img and qt players
+
+window.onload = function(){
+
+  Shadowbox.init();
+
+
+
+};
+
+
+</script>
+</head>
+<body  style="color:white;background-color:black;">
+<h2>ShadowBox Example</h2>
+<a href="2810664385_36f7037c96.jpg" rel="shadowbox"><img style="border-style:none;" src="2810664385_36f7037c96.jpg" height="160" width="250"  /></a>
+<a href="2810666245_e68797b220.jpg" rel="shadowbox"><img style="border-style:none;"  src="2810666245_e68797b220.jpg"  height="160" width="250"  /></a>
+<a href="2810667645_94a611584a.jpg" rel="shadowbox"><img style="border-style:none;"  src="2810667645_94a611584a.jpg" height="160" width="250" /></a>
+<a href="2580616394_901b8617bf.jpg" rel="shadowbox"><img style="border-style:none;"  src="2580616394_901b8617bf.jpg" height="160" width="250" /></a>
+
+<!--
+2810664385_36f7037c96.jpg
+ 2810666245_e68797b220.jpg  
+2810667645_94a611584a.jpg 
+-->
+<p>
+These are some pictures I took with my Nikon D50. Click on an image to see Shadowbox work.
+  <br/><a style="text-decoration:none" href="http://mjijackson.com/shadowbox/index.html"> Shadowbox</a> works with most of the popular ajax frameworks (Yahoo UI, JQuery...etc). 
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>piroBox V.1.1 black version</title>
+<link href="css_pirobox/pirobox_b.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery1.2.6.js"></script>-->
+<script type="text/javascript" src="js/piroBox_pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('.thumbs').piroBox({
+			mySpeed: 500,  
+			bg_alpha: 0.8,
+			pathLoader : 'url(css_pirobox/ajax-loader_b.gif) center center no-repeat;', 
+			gallery : '.pirobox_in li a', 
+			gallery_li : '.pirobox_in li', 
+			next_class : '.next_in',
+			previous_class : '.previous_in'
+	});	
+	$('.thumbs').piroBox({
+			mySpeed: 500, 
+			bg_alpha: 0.8,
+			pathLoader : 'url(css_pirobox/ajax-loader_b.gif) center center no-repeat;', 
+			gallery : '.pirobox li a', 
+			gallery_li : '.pirobox li',
+			single : '.single  a',
+			next_class : '.next',
+			previous_class : '.previous'
+	});	
+});
+
+</script>
+
+
+</head>
+<body>
+
+        <h2 style="margin-top:10px;" >piroBox Black Version 1.1</h2>
+            <div style="float:left; width:90%;">
+                <h3>Image set (prev/next  <span class="highlite">inside</span>)</h3>
+            </div>
+            <div class="pirobox_in">
+                <ul class="thumbs_all">
+                    <li>
+                        <a href="images/1.jpg" title="" ><img src="images/1_s.jpg" alt="demo" width="100" height="100" /></a>
+                    </li>
+                    <li>
+                        <a href="images/2.jpg" title="3 lines caption,Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem " ><img src="images/2_s.jpg" alt="demo" width="100" height="100" /></a>        
+                    </li>
+                    <li>
+                            <a href="images/3.jpg" title="1 line Caption"><img src="images/3_s.jpg" alt="demo" width="100" height="100" /></a>
+                  </li>
+                    <li>
+                        <a href="images/4.jpg" title="2 lines Caption, Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem " ><img src="images/4_s.jpg" alt="demo" width="100" height="100" /></a>
+                    </li>
+              </ul>
+            </div>
+            <div style="float:left; width:90%; margin-top:5px;">
+                <h3>Image set (prev/next  <span class="highlite">outside</span>)</h3>
+            </div>
+            <div class="pirobox">
+                <ul class="thumbs_all">
+                    <li>
+                      <a href="images/5.jpg" title=""><img src="images/5_s.jpg" alt="demo" width="100" height="100" /></a>        
+                  </li>
+                    <li>
+                      <a href="images/6.jpg" title="Caption"><img src="images/6_s.jpg" alt="demo" width="100" height="100" /></a>        
+                    </li>
+                  <li>
+                    <a href="images/7.jpg" title="Resized image, 1280x1024 original"><img src="images/7_s.jpg" alt="demo" width="100" height="100" /></a>        
+                </li>
+                    <li>
+                    <a href="images/8.jpg" title="Caption"><img src="images/8_s.jpg" alt="demo" width="100" height="100" /></a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div style="float:left; width:90%; margin-top:5px;">
+                <h3>Single Image</h3>
+            </div> 
+
+            <div class="gallery">
+                <span class="single thumbs_all">
+                    <a href="images/9.jpg" title="Caption">
+                    <img src="images/9_s.jpg" alt="demo" width="100" height="100" /></a>
+                </span>
+                <span class="single thumbs_all">
+                    <a href="images/10.jpg" title="Caption"><img src="images/10_s.jpg" alt="demo" width="100" height="100" /></a>
+                </span>
+            </div>
+            <div style="float:left; width:90%; margin:10px 0 10px 10px;">
+            <a href="http://www.pirolab.it/pirobox/">back to pirobox </a>
+            </div> 
+</body>
+</html>

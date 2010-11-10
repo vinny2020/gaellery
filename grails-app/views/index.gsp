@@ -1,0 +1,1 @@
+${response.sendRedirect("gallery/random")}
