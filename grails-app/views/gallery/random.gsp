@@ -36,7 +36,7 @@
 
   <tr>
 
-    <td><a href="http://xaymaca.tumblr.com/"><img alt="Blog" src="${createLinkTo(dir:'images/nav',file:'blog.jpg')}"  style="width: 100px; height: 129px; border-width: 0;"></a></td>
+    <td><a href="http://blog.xaymaca-studiois.com/"><img alt="Blog" src="${createLinkTo(dir:'images/nav',file:'blog.jpg')}"  style="width: 100px; height: 129px; border-width: 0;"></a></td>
 </tr>
 
   <tr>
